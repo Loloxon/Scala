@@ -35,10 +35,8 @@ class GolBoard(var cells: Array[Array[GolCell]] = null, var width: Int = 0, var 
 		}
 		for(x <- 1 until width-1){
 			for(y <- 1 until height-1) {
-				//        print(cells(x)(y).sumAliveNeighbors, " ")
 				cells(x)(y).update()
 			}
-			//      println()
 		}
 	}
 

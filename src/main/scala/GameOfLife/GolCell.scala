@@ -34,11 +34,6 @@ class GolCell(var neighbours: Array[GolCell] = Array(), var currentState: Int = 
 		tmp
 	}
 
-	//  def drop(): Unit = {
-	//    val random = new Random
-	//    if (random.nextInt(100) < 5) this.currentState = 6
-	//  }
-
 	def update(): Boolean ={
 		if(currentState==nextState)
 			return false
@@ -61,5 +56,4 @@ class GolCell(var neighbours: Array[GolCell] = Array(), var currentState: Int = 
 		neighbours = neighbours :+ c
 	}
 
-	//  override def addNeighbour(c: Any): Unit = ???
 }

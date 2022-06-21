@@ -35,9 +35,6 @@ object GUI extends JFXApp{
     val height = scene_size_y/rectangle_size
     val rectangles = Array.fill(
       scene_size_x / rectangle_size, scene_size_y / rectangle_size)(Rectangle(rectangle_size, rectangle_size, Grey))
-    println(rectangles.length)
-    println(rectangles(0).length)
-    println(rectangle_size)
     for (i <- 0 until width) {
       for(j <- 0 until height) {
         grid.add(rectangles(i)(j), i, j)
@@ -166,12 +163,9 @@ object GUI extends JFXApp{
 
     val buttonList = Map("stop"->stopButton, "clear"->clearButton, "respawn"->respawnButton, "settings"->settingsButton)
 
-
     val grid = makeGoLGrid(buttonList, timeScroll, modesList)
     mainBorder.center = grid
 
     mainBorder
-
   }
-
 }
