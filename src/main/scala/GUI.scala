@@ -45,7 +45,7 @@ object GUI extends JFXApp{
     board.initialize(width,height)
 
     timeScroll.min = 0
-    timeScroll.max = 7
+    timeScroll.max = 5
     timeScroll.value = 2
 
     var lastTime = 0.0
